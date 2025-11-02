@@ -1,0 +1,22 @@
+{
+  "name": "cratejuice-frontend",
+  "version": "1.0.0",
+  "description": "CrateJuice frontend with pitch/tempo control",
+  "main": "src/audio-player.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": ["audio", "music", "pitch-shift", "tempo"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "soundtouch-js": "^0.1.30"
+  },
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
