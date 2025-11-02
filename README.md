@@ -184,11 +184,20 @@ alembic revision --autogenerate -m "Description of changes"
 ## SoundTouch WASM Licensing & Alternatives
 
 ### Current Implementation
-This project uses **soundtouch-js** (https://github.com/cutterbl/SoundTouchJS), which is a JavaScript/WASM port of the SoundTouch audio processing library.
+This project includes a framework for **SoundTouch-based WASM** pitch/tempo control. The current implementation provides:
+- AudioWorklet processor architecture ready for WASM integration
+- Fallback to browser's native playbackRate for tempo control
+- UI with pitch shift and tempo controls
+
+**Note**: A production-ready WASM pitch shifter would require either:
+1. Building SoundTouch library to WASM manually
+2. Using Tone.js (MIT licensed, https://tonejs.github.io/) which includes pitch shifting
+3. Integrating a commercial audio DSP library
 
 ### License
-- **SoundTouch Library**: LGPL v2.1
-- **soundtouch-js**: LGPL v2.1
+- **SoundTouch Library**: LGPL v2.1 (if integrated)
+- **Tone.js**: MIT (recommended alternative)
+- **Current Implementation**: Framework only, no WASM binary included
 
 ### Alternatives
 
