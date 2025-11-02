@@ -1,0 +1,16 @@
+{
+  "name": "cratejuice-frontend",
+  "version": "1.0.0",
+  "description": "CrateJuice frontend with pitch/tempo control",
+  "main": "src/audio-player.js",
+  "scripts": {
+    "build": "echo 'Build step - copy assets' && mkdir -p dist && cp -r public/* dist/ && cp -r src dist/",
+    "dev": "python3 -m http.server 8080 --directory public",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": ["audio", "music", "pitch-shift", "tempo"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
