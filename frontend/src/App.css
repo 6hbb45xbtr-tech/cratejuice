@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #282c34;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+}
+
+.App-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.status-section, .tracks-section {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #1e2127;
+  border-radius: 10px;
+  min-width: 400px;
+}
+
+.status {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.status.healthy {
+  background-color: #28a745;
+  color: white;
+}
+
+.status.offline {
+  background-color: #dc3545;
+  color: white;
+}
+
+.tracks-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tracks-section li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #282c34;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .status-section, .tracks-section {
+    min-width: 90%;
+  }
+  
+  .App-header h1 {
+    font-size: 2rem;
+  }
+}
