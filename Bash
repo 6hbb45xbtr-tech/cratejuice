@@ -1,0 +1,3 @@
+# from your repo root (6hbb45xbtr-tech/cratejuice)
+chmod +x push_sonic_postcards_v2.sh
+./push_sonic_postcards_v2.sh
