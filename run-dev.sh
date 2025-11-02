@@ -17,8 +17,9 @@ cleanup() {
 
 trap cleanup EXIT INT TERM
 
-# Start backend
+# Start backend with development environment
 cd backend
+export FLASK_ENV=development
 python3 app.py &
 BACKEND_PID=$!
 cd ..
