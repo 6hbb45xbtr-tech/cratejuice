@@ -10,7 +10,8 @@ echo ""
 cleanup() {
     echo ""
     echo "Shutting down servers..."
-    kill $BACKEND_PID $FRONTEND_PID 2>/dev/null
+    [[ -n "$BACKEND_PID" ]] && kill $BACKEND_PID 2>/dev/null
+    [[ -n "$FRONTEND_PID" ]] && kill $FRONTEND_PID 2>/dev/null
     exit
 }
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
+import { getApiUrl } from './config';
 
 function App() {
   const [apiStatus, setApiStatus] = useState(null);
@@ -9,7 +10,7 @@ function App() {
 
   useEffect(() => {
     // Fetch API status
-    axios.get('/api/tracks')
+    axios.get(getApiUrl('/api/tracks'))
       .then(response => {
         setTracks(response.data.tracks || []);
         setLoading(false);
@@ -20,7 +21,7 @@ function App() {
       });
 
     // Fetch API health
-    axios.get('/health')
+    axios.get(getApiUrl('/health'))
       .then(response => {
         setApiStatus(response.data.status);
       })

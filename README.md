@@ -87,6 +87,24 @@ npm run build
 
 The build artifacts will be in the `frontend/build` directory.
 
+## Configuration
+
+### Frontend Environment Variables
+
+For production deployment, set the backend API URL:
+
+```bash
+# .env file in frontend directory (for local development)
+REACT_APP_API_URL=http://localhost:5000
+```
+
+For production (Netlify):
+```bash
+REACT_APP_API_URL=https://your-backend.onrender.com
+```
+
+The frontend will automatically use the proxy in development mode (via `package.json`) and the environment variable in production.
+
 ## Deployment
 
 This application is configured for deployment on:
