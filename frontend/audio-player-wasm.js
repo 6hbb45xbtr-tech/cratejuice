@@ -1,0 +1,1 @@
+<content of frontend/audio-player-wasm.js>
